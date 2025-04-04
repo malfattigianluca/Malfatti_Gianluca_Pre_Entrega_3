@@ -1,0 +1,401 @@
+footer {
+  background-color: #0b1628;
+  margin-top: 10px;
+  color: #fbfbfb;
+  justify-content: space-between;
+}
+footer .flex-container {
+  display: flex;
+  align-items: center;
+}
+footer .flex-container .divider {
+  width: 1px;
+  align-self: stretch;
+  background-color: rgba(201, 201, 201, 0.5);
+  margin: 0 10px;
+}
+footer .content-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+footer .content-footer .gotrip {
+  padding-top: 20px;
+  color: #fbfbfb;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+footer .content-footer .gotrip h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+footer .content-footer .redes img {
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
+}
+footer .content-footer .info {
+  margin: 10px;
+}
+footer .content-footer .info p {
+  color: #c9c9c9;
+  font-size: 0.8rem;
+}
+footer .content-footer .links {
+  text-align: right;
+}
+footer .content-footer .links ul li {
+  margin: 3px;
+}
+footer .content-footer .links ul li a {
+  color: #fbfbfb;
+  text-decoration: none;
+}
+footer .content-footer .links ul li a:hover {
+  transition: all 0.3s ease-in-out;
+  color: #c9c9c9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+footer ul {
+  list-style: none;
+}
+
+header {
+  background-color: #0b1628;
+}
+header div .logo a img {
+  width: 250px;
+  height: 100px;
+}
+header div .menu nav ul {
+  gap: 30px;
+  list-style: none;
+}
+header div .menu nav ul li a {
+  color: #fbfbfb;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+header div .menu nav ul li a:hover {
+  background-color: #2be1f3;
+  color: #fbfbfb;
+}
+header div .menu nav ul li .dropdown-menu {
+  padding: 0;
+  margin-bottom: 15px;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+header div .menu nav ul li .dropdown-menu li {
+  display: flex;
+  background-color: rgba(11, 22, 40, 0.9);
+}
+header div .menu nav ul li .dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px;
+}
+header div .menu nav ul li .dropdown-menu li:hover {
+  background-color: #0b1628;
+  cursor: pointer;
+}
+header div .menu nav ul li .dropdown-menu li:hover a {
+  background-color: rgba(11, 22, 40, 0.6);
+  display: block;
+}
+header div .menu nav ul li li {
+  padding: 10px 20px;
+  background-color: #0b1628;
+}
+header div .menu nav ul li li a {
+  color: #fbfbfb;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+header div .menu nav ul li li a:hover {
+  background-color: #2be1f3;
+  color: #fbfbfb;
+}
+header div .menu nav .lang-moneda {
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+}
+header div .menu nav .lang-moneda .navbar-nav .nav-item {
+  width: 70px;
+  height: 50px;
+}
+header div .menu nav .lang-moneda .navbar-nav .nav-item .bandera {
+  width: 30px;
+  height: 30px;
+}
+header div .menu nav .lang-moneda .navbar-nav .nav-item .dropdown-menu {
+  min-width: 30px;
+}
+header div .menu nav .lang-moneda .navbar-nav .nav-item .dropdown-menu li {
+  padding: 0;
+  width: 70px;
+  display: inherit;
+}
+
+.search .busqueda {
+  margin-top: 10px;
+  padding: 50px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #0b1628;
+}
+.search .busqueda-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.search .formulario {
+  flex: 1 1 100%;
+}
+.search .container-fecha {
+  display: flex;
+  gap: 10px;
+}
+.search .container-fecha p {
+  margin: 0 0 5px 0;
+  color: #fbfbfb;
+  font-size: 14px;
+}
+.search .fecha {
+  flex: 1;
+}
+.search .inputs-busqueda {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #c9c9c9;
+  background-color: #fbfbfb;
+  font-size: 16px;
+}
+.search .boton-busqueda {
+  background-color: #2be1f3;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.search .boton-busquedahover {
+  background-color: #1a7e87;
+}
+
+.ofertas-relampago {
+  margin-top: 50px;
+  border-radius: 10px;
+  background-image: url("https://media.giphy.com/media/3o7TKpYPVmILdMoRUY/giphy.gif?cid=ecf05e47ra389mol9gpdbg5yvdqv0hb6m6hw9p8kon4wikbx&ep=v1_gifs_related&rid=giphy.gif&ct=g");
+  width: auto;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ofertas-relampago h2 {
+  color: #fbfbfb;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.ofertas-relampago .content-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.ofertas-relampago .item {
+  width: 150px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.countdown {
+  padding: 20px;
+  border-radius: 10px;
+}
+.countdown span {
+  color: #ffffff;
+}
+
+@media (min-width: 1200px) {
+  .busqueda {
+    padding: 30px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #0b1628;
+  }
+}
+@media (max-width: 768px) {
+  .ofertas-relampago .content-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ofertas-relampago .item {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 320px) {
+  .ofertas-relampago .content-item {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ofertas-relampago .item {
+    width: 100%;
+    height: 200px;
+  }
+}
+section h2 {
+  text-align: center;
+  padding: 30px;
+}
+section .destino-container {
+  background-color: #fbfbfb;
+  border-radius: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section .destino-container .destino-content {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+section .destino-container .destino-item .card {
+  width: 100%;
+}
+section .destino-container .destino-item .card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+section .destino-container .destino-item .card:hover {
+  transition: 0.2s ease-out;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section .promociones {
+  background-color: #fbfbfb;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+section .promociones h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+section .promociones .content .promociones-content .promociones-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .promociones .content .promociones-content .promociones-item img {
+  width: 33%;
+  height: auto;
+}
+section .promociones .tarjetas {
+  margin-top: 30px;
+  padding: 30px 0 30px 0;
+  text-align: center;
+}
+section .promociones .tarjetas #cuotas {
+  color: #12a357;
+  text-shadow: 1px;
+}
+section .promociones .tarjetas p {
+  font-size: 20px;
+}
+section .promociones .tarjetas img {
+  width: 50px;
+  height: auto;
+}
+section .card {
+  padding-bottom: 15px;
+}
+section .card .card-body .imp {
+  font-size: 15px;
+  color: rgba(135, 135, 135, 0.4);
+}
+section .card .card-body .info {
+  font-size: 1em;
+  color: #878787;
+  position: absolute;
+  padding-top: 20px;
+}
+section .card .card-body .descuento {
+  position: absolute;
+  margin-top: 15px;
+  text-decoration: line-through;
+}
+section .card .card-body .descuento span {
+  color: green;
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+section .card .card-body .precio {
+  font-weight: bold;
+  margin-top: 50px;
+  position: relative;
+  font-size: 25px;
+  color: green;
+}
+
+.content .carousel-control-prev, .content .carousel-control-next {
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  opacity: 1;
+}
+.content .carousel-control-prev:hover,
+.content .carousel-control-next:hover {
+  border-radius: 50%;
+  transition: 0.5s;
+  background-color: #2be1f3;
+  color: #fbfbfb;
+  scale: 1.05;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel .carousel-inner {
+  padding: 1em;
+}
+.carousel .cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.carousel .card {
+  flex: 1;
+  box-shadow: 2px 6px 8px rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.carousel .card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

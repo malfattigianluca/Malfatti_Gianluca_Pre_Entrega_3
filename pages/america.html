@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/styles/css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <title>GoTrip! - Paquetes a América</title>
+    </head>
+    <body>
+        <header>
+            <div class="container-header container">
+                <div class="content-header navbar navbar-expand-lg">
+                    <div class="logo">
+                        <a href="../index.html" class="logo"><img src="../assets/images/logo.jpeg" alt="Logo de GoTrip!"></a>
+                    </div>
+                    <div class="menu w-100">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav me-auto"> 
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../index.html">Inicio</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Destinos</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="america.html">América</a></li>
+                                                <li><a class="dropdown-item" href="europa.html">Europa</a></li>
+                                                <li><a class="dropdown-item" href="asia.html">Asia</a></li>
+                                                <li><a class="dropdown-item" href="resto_del_mundo.html">Resto del mundo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="../index.html#ofertas">Ofertas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contacto.html">Contacto</a>
+                                        </li>
+                                    </ul>
+                                        <div class="lang-moneda ms-auto">
+                                            <ul class="navbar-nav">
+                                                <li class="nav-item dropdown language">
+                                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                        <img src="../assets/images/svg/argentina.png" class="bandera" alt="Lenguaje Español">
+                                                    </a>
+                                                    <ul class="dropdown-menu language-menu">
+                                                        <li><a class="dropdown-item" href="#"><img src="../assets/images/svg/uk.png" class="bandera" alt="Lenguaje Inglés"></a></li>
+                                                        <li><a class="dropdown-item" href="#"><img src="../assets/images/svg/portugues.png" class="bandera" alt="Lenguaje Portugués"></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="navbar-nav">
+                                                <li class="nav-item dropdown moneda">
+                                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">ARS</a>
+                                                    <ul class="dropdown-menu moneda-menu">
+                                                        <li><a class="dropdown-item" href="#">USD</a></li>
+                                                        <li><a class="dropdown-item" href="#">R$</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1 style='display: none;' class='page-title entry-title'>GoTrip! - Los mejores paquetes al mejor precio</h1>
+
+            <!--Panel de busqueda-->
+            <section class="search">
+                <div class="busqueda container ">
+                    <div class="busqueda-content">
+                        <div class="busqueda-items">
+                            <div class="formulario">
+                                <input class="inputs-busqueda" type="text" placeholder="Origen" required>
+                            </div>
+                            <div class="formulario">
+                                <input class="inputs-busqueda"type="text" placeholder="Destino" required>
+                            </div>
+                            <div class="formulario container-fecha">
+                                <div class="fecha">
+                                    <p>Fecha de salida</p>
+                                    <input class="inputs-busqueda" type="date" placeholder="Fecha de salida" required max="2025-04-19" min="2025-03-30">
+                                </div>
+                                <div class="fecha">
+                                    <p>Fecha de regreso</p>
+                                    <input class="inputs-busqueda" type="date" placeholder="Fecha de regreso" required max="2025-04-19" min="2025-03-30">
+                                </div>
+                            </div>
+                            <div class="formulario">
+                                    <input class="inputs-busqueda" required type="number" placeholder="Cantidad de pasajeros" min="1" max="6">
+                            </div>
+                            <div class="formulario">
+                                <button class="inputs-busqueda boton-busqueda" type="submit"><a href="#" target="_blank"><object id="svg1" data="../assets/images/svg/search.svg" type="image/svg+xml" style="width: 30px; height: 30px;">Buscar</object></a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contenedor de paquetes-->
+            <section>
+                <div class="destino-container container">
+                    <h2>Paquetes a América</h2>
+                    <div class="destino-content">
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/santiago.png" class="card-img-top" alt="Santiago de Chile">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Santiago</h5>
+                                    <p class="info">Hospedaje + Aéreo</p>
+                                    <p class="noches-personas">10 noches - 3 pasajeros</p>
+                                    <p class="descuento">$2.534.220<span>55%OFF</span></p>
+                                    <p class="precio">$1.140.399</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/bsas.png" class="card-img-top" alt="Buenos Aires">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Buenos Aires</h5>
+                                    <p class="info">Hospedaje + Aéreo</p>
+                                    <p class="noches-personas">5 noches - 4 pasajeros</p>
+                                    <p class="descuento">$861.986<span>20%OFF</span></p>
+                                    <p class="precio">$689.589</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/montevideo.png" class="card-img-top" alt="Montevideo">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Montevideo</h5>
+                                    <p class="info">Hospedaje + Ferry</p>
+                                    <p class="noches-personas">3 noches - 2 pasajeros</p>
+                                    <p class="descuento">$5.873.635<span>45%OFF</span></p>
+                                    <p class="precio">$3.230.499</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/paris.png" class="card-img-top" alt="Santiago de Chile">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Paris</h5>
+                                    <p class="info">Hospedaje + Aéreo</p>
+                                    <p class="noches-personas">10 noches - 4 pasajeros</p>
+                                    <p class="descuento">$5.873.635<span>45%OFF</span></p>
+                                    <p class="precio">$3.230.499</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/m_pichu.png" class="card-img-top" alt="Machu Pichu">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Machu Picchu</h5>
+                                    <p class="info">Hospedaje + Aéreo</p>
+                                    <p class="noches-personas">4 noches - 2 pasajeros</p>
+                                    <p class="descuento">$5.873.635<span>45%OFF</span></p>
+                                    <p class="precio">$3.230.499</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/san_andres.png" class="card-img-top" alt="Isla San Andres">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Isla San Andres</h5>
+                                    <p class="info">Hospedaje + Aéreo</p>
+                                    <p class="noches-personas">10 noches - 4 pasajeros</p>
+                                    <p class="descuento">$5.873.635<span>45%OFF</span></p>
+                                    <p class="precio">$3.230.499</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/ushuaia.png" class="card-img-top" alt="Ushuaia">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Ushuaia</h5>
+                                    <p class="info">Hospedaje + Aéreo</p>
+                                    <p class="noches-personas">6 noches - 4 pasajeros</p>
+                                    <p class="descuento">$5.873.635<span>45%OFF</span></p>
+                                    <p class="precio">$3.230.499</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/bariloche.png" class="card-img-top" alt="Bariloche">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Bariloche</h5>
+                                    <p class="info">Hospedaje + Aéreo + Excursiones</p>
+                                    <p class="noches-personas">7 noches - 4 pasajeros</p>
+                                    <p class="descuento">$5.873.635<span>45%OFF</span></p>
+                                    <p class="precio">$3.230.499</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="destino-item">
+                            <div class="card">
+                                <img src="../assets/images/destinos/salta.png" class="card-img-top" alt="Salta">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paquete a Salta</h5>
+                                    <p class="info">Hospedaje + Aéreo + Excursiones</p>
+                                    <p class="noches-personas">14 noches - 2 pasajeros</p>
+                                    <p class="descuento">$5.873.635<span>45%OFF</span></p>
+                                    <p class="precio">$3.230.499</p>
+                                    <p class="imp">Precio final por persona.<br>Incluye imp, cargos y tasa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Footer-->
+            <footer class="container-wrapper">
+                <div class="container-footer container">
+                    <div class="content-footer flex-container">
+                        <div class="gotrip">
+                            <h2>GoTrip!</h2>
+                            <p>Los mejores paquetes al mejor precio</p>
+                            <div class="redes">
+                                <div class="redes-content">
+                                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/images/svg/facebook.svg"></a>
+                                    <a href="https://www.instagram.com/" target="_blank"><img src="../assets/images/svg/instagram.svg"></a>
+                                    <a href="https://www.twitter.com/" target="_blank"><img src="../assets/images/svg/twitter.svg"></a>
+                                    <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/images/svg/linkedin.svg"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="info">
+                            <p>Ventas: +54 9 112 345 6789</p>
+                            <p>Pos-Venta: +54 9 112 789 4561</p>
+                            <p>Av. Corrientes 123, CABA, Argentina</p>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="links">
+                            <ul>
+                                <li><a href="contacto.html">Contacto</a></li>
+                                <li><a href="contacto.html#tyc">Terminos y Condiciones</a></li>
+                                <li><a href="../index.html#promociones">Promociones</a></li>
+                                <li><a href="../index.html#medios_de_pago">Medios de pago</a></li>
+                                <li><a href="#">Boton de arrepentimiento</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

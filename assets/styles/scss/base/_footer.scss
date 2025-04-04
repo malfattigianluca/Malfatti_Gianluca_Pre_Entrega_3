@@ -1,0 +1,94 @@
+@use "../components/variables" as *;
+
+footer {
+    background-color: $azul;
+    margin-top: 10px;
+    color: $blanco;
+    justify-content: space-between;
+
+        $divider-color: $gris;
+        $divider-width: 1px;
+        $divider-margin: 10px;
+        $divider-opacity: 0.5;
+        .flex-container {
+            display: flex;
+            align-items: center;
+        
+            .content {
+            }
+            
+            .divider {
+            width: $divider-width;
+            align-self: stretch;
+            background-color: rgba($divider-color, $divider-opacity);
+            margin: 0 $divider-margin;
+            }
+        }
+
+
+    .content-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        
+        .gotrip{
+            padding-top: 20px;
+            color: $blanco;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 700;
+    
+            h2{
+                font-size: 2rem;
+                font-weight: 700;
+            }
+        }
+
+        .redes{
+            img{
+                width: 30px;
+                height: 30px;
+                justify-content: space-between;
+            }
+        }
+
+        .info {
+            margin: 10px;
+            p{
+                color: $gris;
+                font-size: 0.8rem;
+            }
+        }
+
+        
+        .links{
+            text-align: right;
+            ul{
+                li{
+                    margin: 3px;
+                    a{
+                        color: $blanco;
+                        text-decoration: none;
+                        &:hover{
+                            transition: all 0.3s ease-in-out;
+                            color: $gris;
+                            text-decoration: underline;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ul{
+        list-style: none;
+    }
+
+
+    
+    
+
+    
+
+}
