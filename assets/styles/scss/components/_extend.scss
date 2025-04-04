@@ -1,0 +1,17 @@
+@use "variables" as *; 
+
+%link-style {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+%nav-list {
+    list-style: none;
+    gap: 30px;
+}
+
+%dropdown-item {
+    display: flex;
+    background-color: rgba($azul, 0.9);
+}

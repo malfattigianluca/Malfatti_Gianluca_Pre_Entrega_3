@@ -1,0 +1,31 @@
+@use "variables" as *; // Importa variables si es necesario
+
+@mixin flex-center($direction: row, $gap: 0) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin text-style($size: 1rem, $weight: normal, $color: $blanco) {
+    font-family: $font-main;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin hover-effect($bg: $celeste, $color: $blanco) {
+    &:hover {
+        background-color: $bg;
+        color: $color;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@mixin dropdown-menu {
+    padding: 0;
+    margin-bottom: 15px;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+}
