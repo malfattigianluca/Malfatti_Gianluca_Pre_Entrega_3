@@ -16,6 +16,7 @@
 
 @mixin hover-effect($bg: $celeste, $color: $blanco) {
     &:hover {
+        border-radius: 5px;
         background-color: $bg;
         color: $color;
         transition: all 0.3s ease-in-out;
@@ -24,7 +25,7 @@
 
 @mixin dropdown-menu {
     padding: 0;
-    margin-bottom: 15px;
+    margin: 0;
     box-shadow: none;
     border: none;
     border-radius: 0;

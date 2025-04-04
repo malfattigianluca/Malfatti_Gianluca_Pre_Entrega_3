@@ -1,6 +1,7 @@
 @use "../components/variables" as *;
 
 .search {
+    margin-top: 120px;
     .busqueda {
         margin-top: 10px;
         padding: 50px;
@@ -63,6 +64,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
     
     h2 {
         color: $blanco;

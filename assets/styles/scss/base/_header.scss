@@ -3,49 +3,79 @@
 @use "../components/extend" as *;
 
 header {
+    padding: 0;
+    margin: 0;
     background-color: $azul;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba($celeste, 0.2);
+    margin: 0;
+
+    .content-header {
+        height: 70px;
+        display: flex;
+        margin: 20px;
+        align-items: center; 
+        justify-content: space-between; 
+    }
+
     div {
         .logo{
             a {
+                @extend %link-style;
+                @include text-style(2rem, bold, $blanco);
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
                 img {
-                    width: 250px;
-                    height: 100px;
+                    width: 120px;
+                    height: 70px;
+                    margin-right: 10px;
                 }
             }
         }
 
         .menu {
             nav {
+                .dropdown-toggle{
+                    color: $blanco !important;
+                }
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                }
                 ul {
                     @extend %nav-list;
-
+                    align-items: center;
+                    height: 100%;
                     li {
+                        display: flex;
+                        align-items: center;
                         a {
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
                             @extend %link-style;
                             @include text-style(1.2rem);
                             @include hover-effect($celeste, $blanco);
                         }
         
                         @include dropdown-menu;
+                        .dropdown-menu {
+                            background-color: $azul;
                             li { 
                                 @extend %dropdown-item;
+                                cursor: pointer;
                                 a {
                                     color: white;
                                     text-decoration: none;
                                     width: 100%;
                                     padding: 10px;
                                 }
-                                &:hover {
-                                    background-color: rgba($azul, 1);
-                                    cursor: pointer;
-                                    
-                                    a {
-                                        background-color: rgba($azul, 0.6);
-                                        display: block;
-                                    }
-                                }
+                                @include hover-effect($celeste, $blanco);
                             }
-                        }
+                        }}
                         
                         li {
                             padding: 10px 20px;
@@ -67,21 +97,25 @@ header {
                 .lang-moneda {
                     position: absolute;
                     right: 0;
-                    margin-right: 15px;
                     .navbar-nav{
                         .nav-item{
+                            margin: 20px;
                             width: 70px;
-                            height: 50px;
+                            height: 30px;
                             .bandera{
+                                justify-content: center;
+                                align-items: center;
                                 width: 30px;
                                 height: 30px;
                             }
+                            @include dropdown-menu;
                             .dropdown-menu{
+                                background-color: $azul;
                                 min-width: 30px;
                                 li{
                                     padding:0;
                                     width: 70px;
-                                    display: inherit;
+                                    height: 30px;
                                 }
                                 
                             }

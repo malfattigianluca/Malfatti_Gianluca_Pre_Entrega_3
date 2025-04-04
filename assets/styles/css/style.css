@@ -63,7 +63,7 @@ footer ul {
   list-style: none;
 }
 
-header div .menu nav ul li a {
+header div .logo a, header div .menu nav ul li a {
   text-decoration: none;
   font-size: 1.2rem;
   padding: 10px 20px;
@@ -74,49 +74,94 @@ header div .menu nav ul {
   gap: 30px;
 }
 
-header div .menu nav ul li li {
+header div .menu nav ul li .dropdown-menu li {
   display: flex;
   background-color: rgba(11, 22, 40, 0.9);
 }
 
 header {
+  padding: 0;
+  margin: 0;
   background-color: #0b1628;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(43, 225, 243, 0.2);
+  margin: 0;
+}
+header .content-header {
+  height: 70px;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+header div .logo a {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fbfbfb;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
 }
 header div .logo a img {
-  width: 250px;
-  height: 100px;
+  width: 120px;
+  height: 70px;
+  margin-right: 10px;
+}
+header div .menu nav .dropdown-toggle {
+  color: #fbfbfb !important;
+}
+header div .menu nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+header div .menu nav ul {
+  align-items: center;
+  height: 100%;
 }
 header div .menu nav ul li {
+  display: flex;
+  align-items: center;
   padding: 0;
-  margin-bottom: 15px;
+  margin: 0;
   box-shadow: none;
   border: none;
   border-radius: 0;
 }
 header div .menu nav ul li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   font-weight: normal;
   color: #fbfbfb;
 }
 header div .menu nav ul li a:hover {
+  border-radius: 5px;
   background-color: #2be1f3;
   color: #fbfbfb;
   transition: all 0.3s ease-in-out;
 }
-header div .menu nav ul li li a {
+header div .menu nav ul li .dropdown-menu {
+  background-color: #0b1628;
+}
+header div .menu nav ul li .dropdown-menu li {
+  cursor: pointer;
+}
+header div .menu nav ul li .dropdown-menu li a {
   color: white;
   text-decoration: none;
   width: 100%;
   padding: 10px;
 }
-header div .menu nav ul li li:hover {
-  background-color: #0b1628;
-  cursor: pointer;
-}
-header div .menu nav ul li li:hover a {
-  background-color: rgba(11, 22, 40, 0.6);
-  display: block;
+header div .menu nav ul li .dropdown-menu li:hover {
+  border-radius: 5px;
+  background-color: #2be1f3;
+  color: #fbfbfb;
+  transition: all 0.3s ease-in-out;
 }
 header div .menu nav ul li {
   padding: 10px 20px;
@@ -135,25 +180,36 @@ header div .menu nav ul li a:hover {
 header div .menu .lang-moneda {
   position: absolute;
   right: 0;
-  margin-right: 15px;
 }
 header div .menu .lang-moneda .navbar-nav .nav-item {
+  margin: 20px;
   width: 70px;
-  height: 50px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
 }
 header div .menu .lang-moneda .navbar-nav .nav-item .bandera {
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
 }
 header div .menu .lang-moneda .navbar-nav .nav-item .dropdown-menu {
+  background-color: #0b1628;
   min-width: 30px;
 }
 header div .menu .lang-moneda .navbar-nav .nav-item .dropdown-menu li {
   padding: 0;
   width: 70px;
-  display: inherit;
+  height: 30px;
 }
 
+.search {
+  margin-top: 120px;
+}
 .search .busqueda {
   margin-top: 10px;
   padding: 50px;
