@@ -88,3 +88,137 @@ section{
     }
 }
 
+@media (max-width: 1199px) and (min-width: 768px) {
+    section {
+        .promociones {
+            .content {
+                .promociones-content {
+                    .promociones-item {
+                        .card {
+                            flex: 0 1 45%; /* 2 tarjetas por fila */
+                            max-width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media Query para pantallas de máximo 767px (1 tarjeta por fila) */
+@media (max-width: 767px) {
+    section {
+        .promociones {
+            padding: 20px 10px;
+
+            .content {
+                .promociones-content {
+                    .promociones-item {
+                        .card {
+                            flex: 0 1 100%; /* 1 tarjeta por fila */
+                            max-width: 100%;
+                            min-width: 0; /* Eliminar el ancho mínimo para que se ajuste al contenedor */
+
+                            .card-body {
+                                padding: 10px;
+                                min-height: 120px;
+
+                                .imp {
+                                    font-size: 13px;
+                                }
+
+                                .info {
+                                    font-size: 0.9em;
+                                }
+
+                                .descuento {
+                                    span {
+                                        font-size: 15px;
+                                        margin-left: 8px;
+                                    }
+                                }
+
+                                .precio {
+                                    font-size: 22px;
+                                    margin-top: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tarjetas {
+                padding: 20px 0;
+
+                p {
+                    font-size: 18px;
+                }
+
+                img {
+                    width: 40px;
+                    margin: 0 3px;
+                }
+            }
+        }
+    }
+}
+
+/* Media Query para pantallas muy pequeñas (máximo 576px) */
+@media (max-width: 576px) {
+    section {
+        .promociones {
+            padding: 15px 5px;
+
+            h2 {
+                font-size: 1.5rem;
+                padding-bottom: 20px;
+            }
+
+            .content {
+                .promociones-content {
+                    .promociones-item {
+                        .card {
+                            .card-body {
+                                padding: 8px;
+                                min-height: 100px;
+
+                                .imp {
+                                    font-size: 12px;
+                                }
+
+                                .info {
+                                    font-size: 0.85em;
+                                }
+
+                                .descuento {
+                                    span {
+                                        font-size: 14px;
+                                        margin-left: 5px;
+                                    }
+                                }
+
+                                .precio {
+                                    font-size: 20px;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tarjetas {
+                padding: 15px 0;
+
+                p {
+                    font-size: 16px;
+                }
+
+                img {
+                    width: 35px;
+                }
+            }
+        }
+    }
+}

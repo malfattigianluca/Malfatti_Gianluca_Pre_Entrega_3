@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   background-color: #0b1628;
   margin-top: 10px;
@@ -207,6 +208,190 @@ header div .menu .lang-moneda .navbar-nav .nav-item .dropdown-menu li {
   height: 30px;
 }
 
+/* Media Query para pantallas de máximo 992px (Bootstrap colapsa el menú aquí) */
+@media (max-width: 992px) {
+  header .content-header {
+    margin: 10px;
+    height: auto; /* Permitir que la altura se ajuste */
+  }
+  header .logo a {
+    padding: 5px 10px;
+  }
+  header .logo a img {
+    width: 100px; /* Reducir tamaño del logo */
+    height: 50px;
+  }
+  header .menu nav .navbar-collapse {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  header .menu nav ul.navbar-nav {
+    flex-direction: column; /* Apilar los enlaces verticalmente */
+    align-items: flex-start;
+  }
+  header .menu nav ul.navbar-nav li {
+    width: 100%; /* Ocupar todo el ancho */
+  }
+  header .menu nav ul.navbar-nav li a {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+  }
+  header .menu nav ul.navbar-nav li .dropdown-menu {
+    width: 100%; /* Ajustar el dropdown al ancho del contenedor */
+    position: static; /* Evitar que el dropdown se salga del flujo */
+    box-shadow: none; /* Quitar sombra para un diseño más limpio */
+    background-color: rgb(5.5, 11, 20); /* Fondo ligeramente más oscuro para diferenciar */
+  }
+  header .menu nav ul.navbar-nav li .dropdown-menu li a {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+  header .menu nav .lang-moneda {
+    position: static; /* Quitar position: absolute */
+    margin-top: 10px;
+    width: 100%; /* Ocupar todo el ancho */
+    justify-content: flex-start; /* Alinear a la izquierda */
+    gap: 10px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.language .bandera {
+    width: 25px;
+    height: 25px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.moneda .nav-link {
+    font-size: 1rem;
+    padding: 3px 8px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.moneda .dropdown-menu {
+    position: static;
+    width: 100%;
+    background-color: rgb(5.5, 11, 20);
+    min-width: 0;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.moneda .dropdown-menu li {
+    height: 35px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.moneda .dropdown-menu li a {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+/* Media Query para pantallas de máximo 576px */
+@media (max-width: 576px) {
+  header .content-header {
+    margin: 5px;
+  }
+  header .logo a {
+    padding: 5px;
+  }
+  header .logo a img {
+    width: 80px; /* Reducir aún más el logo */
+    height: 40px;
+  }
+  header .menu nav .navbar-collapse {
+    padding: 10px;
+  }
+  header .menu nav ul.navbar-nav li a {
+    font-size: 1rem;
+    padding: 8px 10px;
+  }
+  header .menu nav ul.navbar-nav li .dropdown-menu li a {
+    font-size: 0.9rem;
+    padding: 6px 15px;
+  }
+  header .menu nav .lang-moneda {
+    gap: 8px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.language .bandera {
+    width: 20px;
+    height: 20px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.moneda .nav-link {
+    font-size: 0.9rem;
+    padding: 2px 6px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.moneda .dropdown-menu li {
+    height: 30px;
+  }
+  header .menu nav .lang-moneda .navbar-nav .nav-item.moneda .dropdown-menu li a {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}
+.contact {
+  margin-top: 150px;
+}
+.contact .container {
+  margin-bottom: 5rem;
+  width: 70%;
+}
+.contact .accordion .accordion-item {
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.contact .accordion .accordion-item .accordion-header .accordion-button {
+  color: #0b1628;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-radius: 5px;
+}
+.contact .accordion .accordion-item .accordion-body {
+  padding: 20px;
+}
+
+@media (max-width: 1199px) {
+  .contact {
+    margin-top: 250px;
+  }
+  .contact .container {
+    width: 90%;
+  }
+  .contact .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  .contact .accordion .accordion-item .accordion-body {
+    padding: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .contact {
+    margin-top: 230px;
+  }
+  .contact .container {
+    width: 100%;
+  }
+  .contact .accordion .accordion-item {
+    margin-bottom: 8px;
+  }
+  .contact .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .contact .accordion .accordion-item .accordion-body {
+    padding: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .contact {
+    margin-top: 100px;
+  }
+  .contact .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .contact .accordion .accordion-item {
+    margin-bottom: 5px;
+  }
+  .contact .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+  .contact .accordion .accordion-item .accordion-body {
+    padding: 10px;
+  }
+}
 .search {
   margin-top: 120px;
 }
@@ -422,6 +607,88 @@ section .card .card-body .precio {
   color: green;
 }
 
+@media (max-width: 1199px) and (min-width: 768px) {
+  section .promociones .content .promociones-content .promociones-item .card {
+    flex: 0 1 45%; /* 2 tarjetas por fila */
+    max-width: 350px;
+  }
+}
+/* Media Query para pantallas de máximo 767px (1 tarjeta por fila) */
+@media (max-width: 767px) {
+  section .promociones {
+    padding: 20px 10px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card {
+    flex: 0 1 100%; /* 1 tarjeta por fila */
+    max-width: 100%;
+    min-width: 0; /* Eliminar el ancho mínimo para que se ajuste al contenedor */
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body {
+    padding: 10px;
+    min-height: 120px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .imp {
+    font-size: 13px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .info {
+    font-size: 0.9em;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .descuento span {
+    font-size: 15px;
+    margin-left: 8px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .precio {
+    font-size: 22px;
+    margin-top: 8px;
+  }
+  section .promociones .tarjetas {
+    padding: 20px 0;
+  }
+  section .promociones .tarjetas p {
+    font-size: 18px;
+  }
+  section .promociones .tarjetas img {
+    width: 40px;
+    margin: 0 3px;
+  }
+}
+/* Media Query para pantallas muy pequeñas (máximo 576px) */
+@media (max-width: 576px) {
+  section .promociones {
+    padding: 15px 5px;
+  }
+  section .promociones h2 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body {
+    padding: 8px;
+    min-height: 100px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .imp {
+    font-size: 12px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .info {
+    font-size: 0.85em;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .descuento span {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  section .promociones .content .promociones-content .promociones-item .card .card-body .precio {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  section .promociones .tarjetas {
+    padding: 15px 0;
+  }
+  section .promociones .tarjetas p {
+    font-size: 16px;
+  }
+  section .promociones .tarjetas img {
+    width: 35px;
+  }
+}
 .content .carousel-control-prev, .content .carousel-control-next {
   width: 35px;
   height: 35px;

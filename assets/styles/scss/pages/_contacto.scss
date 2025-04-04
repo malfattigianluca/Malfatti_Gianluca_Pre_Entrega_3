@@ -1,0 +1,101 @@
+@use "../components/variables" as *;
+
+.contact {
+    margin-top: 150px;
+    .container {
+        margin-bottom: 5rem;
+        width: 70%;
+    }
+
+    .accordion {
+        .accordion-item {
+            border: 1px solid $gris;
+            border-radius: 5px;
+            margin-bottom: 10px;
+
+            .accordion-header {
+                .accordion-button {
+                    color: $azul;
+                    font-size: 1.2rem;
+                    padding: 15px;
+                    border-radius: 5px;
+                }
+            }
+
+            .accordion-body {
+                padding: 20px;
+
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .contact {
+        margin-top: 250px;
+        .container {
+            width: 90%;
+        }
+        .accordion {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 1.1rem;
+                        padding: 12px;
+                    }
+                }
+                .accordion-body {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .contact {
+        margin-top: 230px;
+        .container {
+            width: 100%; 
+        }
+        .accordion {
+            .accordion-item {
+                margin-bottom: 8px;
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 1rem;
+                        padding: 10px;
+                    }
+                }
+                .accordion-body {
+                    padding: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .contact {
+        margin-top: 100px;
+        .container {
+            width: 100%;
+            padding: 0 10px;
+        }
+        .accordion {
+            .accordion-item {
+                margin-bottom: 5px;
+                .accordion-header {
+                    .accordion-button {
+                        font-size: 0.9rem;
+                        padding: 8px;
+                    }
+                }
+                .accordion-body {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
