@@ -208,17 +208,16 @@ header div .menu .lang-moneda .navbar-nav .nav-item .dropdown-menu li {
   height: 30px;
 }
 
-/* Media Query para pantallas de máximo 992px (Bootstrap colapsa el menú aquí) */
 @media (max-width: 992px) {
   header .content-header {
     margin: 10px;
-    height: auto; /* Permitir que la altura se ajuste */
+    height: auto;
   }
   header .logo a {
     padding: 5px 10px;
   }
   header .logo a img {
-    width: 100px; /* Reducir tamaño del logo */
+    width: 100px;
     height: 50px;
   }
   header .menu nav .navbar-collapse {
@@ -227,31 +226,31 @@ header div .menu .lang-moneda .navbar-nav .nav-item .dropdown-menu li {
     border-radius: 5px;
   }
   header .menu nav ul.navbar-nav {
-    flex-direction: column; /* Apilar los enlaces verticalmente */
+    flex-direction: column;
     align-items: flex-start;
   }
   header .menu nav ul.navbar-nav li {
-    width: 100%; /* Ocupar todo el ancho */
+    width: 100%;
   }
   header .menu nav ul.navbar-nav li a {
     padding: 10px 15px;
     font-size: 1.1rem;
   }
   header .menu nav ul.navbar-nav li .dropdown-menu {
-    width: 100%; /* Ajustar el dropdown al ancho del contenedor */
-    position: static; /* Evitar que el dropdown se salga del flujo */
-    box-shadow: none; /* Quitar sombra para un diseño más limpio */
-    background-color: rgb(5.5, 11, 20); /* Fondo ligeramente más oscuro para diferenciar */
+    width: 100%;
+    position: static;
+    box-shadow: none;
+    background-color: rgb(5.5, 11, 20);
   }
   header .menu nav ul.navbar-nav li .dropdown-menu li a {
     padding: 8px 20px;
     font-size: 1rem;
   }
   header .menu nav .lang-moneda {
-    position: static; /* Quitar position: absolute */
+    position: static;
     margin-top: 10px;
-    width: 100%; /* Ocupar todo el ancho */
-    justify-content: flex-start; /* Alinear a la izquierda */
+    width: 100%;
+    justify-content: flex-start;
     gap: 10px;
   }
   header .menu nav .lang-moneda .navbar-nav .nav-item.language .bandera {
@@ -276,7 +275,6 @@ header div .menu .lang-moneda .navbar-nav .nav-item .dropdown-menu li {
     font-size: 0.9rem;
   }
 }
-/* Media Query para pantallas de máximo 576px */
 @media (max-width: 576px) {
   header .content-header {
     margin: 5px;
@@ -401,7 +399,7 @@ header div .menu .lang-moneda .navbar-nav .nav-item .dropdown-menu li {
   margin-bottom: 0.4rem;
   margin-top: 0;
 }
-.carousel .card-body .imp {
+.carousel .card-body .precio .imp {
   font-size: 0.75rem;
   color: #666;
 }
@@ -731,19 +729,18 @@ section .card .card-body .imp {
 
 @media (max-width: 1199px) and (min-width: 768px) {
   section .promociones .content .promociones-content .promociones-item .card {
-    flex: 0 1 45%; /* 2 tarjetas por fila */
+    flex: 0 1 45%;
     max-width: 350px;
   }
 }
-/* Media Query para pantallas de máximo 767px (1 tarjeta por fila) */
 @media (max-width: 767px) {
   section .promociones {
     padding: 20px 10px;
   }
   section .promociones .content .promociones-content .promociones-item .card {
-    flex: 0 1 100%; /* 1 tarjeta por fila */
+    flex: 0 1 100%;
     max-width: 100%;
-    min-width: 0; /* Eliminar el ancho mínimo para que se ajuste al contenedor */
+    min-width: 0;
   }
   section .promociones .content .promociones-content .promociones-item .card .card-body {
     padding: 10px;
@@ -774,7 +771,6 @@ section .card .card-body .imp {
     margin: 0 3px;
   }
 }
-/* Media Query para pantallas muy pequeñas (máximo 576px) */
 @media (max-width: 576px) {
   section .promociones {
     padding: 15px 5px;

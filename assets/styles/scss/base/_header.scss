@@ -128,19 +128,18 @@ header {
     }
 
     
-/* Media Query para pantallas de máximo 992px (Bootstrap colapsa el menú aquí) */
 @media (max-width: 992px) {
     header {
         .content-header {
             margin: 10px;
-            height: auto; /* Permitir que la altura se ajuste */
+            height: auto;
         }
 
         .logo {
             a {
                 padding: 5px 10px;
                 img {
-                    width: 100px; /* Reducir tamaño del logo */
+                    width: 100px;
                     height: 50px;
                 }
             }
@@ -153,24 +152,20 @@ header {
                     margin-top: 10px;
                     border-radius: 5px;
                 }
-
                 ul.navbar-nav {
-                    flex-direction: column; /* Apilar los enlaces verticalmente */
+                    flex-direction: column;
                     align-items: flex-start;
-
                     li {
-                        width: 100%; /* Ocupar todo el ancho */
+                        width: 100%;
                         a {
                             padding: 10px 15px;
                             font-size: 1.1rem;
                         }
-
                         .dropdown-menu {
-                            width: 100%; /* Ajustar el dropdown al ancho del contenedor */
-                            position: static; /* Evitar que el dropdown se salga del flujo */
-                            box-shadow: none; /* Quitar sombra para un diseño más limpio */
-                            background-color: darken($azul, 5%); /* Fondo ligeramente más oscuro para diferenciar */
-
+                            width: 100%;
+                            position: static;
+                            box-shadow: none; 
+                            background-color: darken($azul, 5%);
                             li {
                                 a {
                                     padding: 8px 20px;
@@ -182,12 +177,11 @@ header {
                 }
 
                 .lang-moneda {
-                    position: static; /* Quitar position: absolute */
+                    position: static;
                     margin-top: 10px;
-                    width: 100%; /* Ocupar todo el ancho */
-                    justify-content: flex-start; /* Alinear a la izquierda */
+                    width: 100%;
+                    justify-content: flex-start;
                     gap: 10px;
-
                     .navbar-nav {
                         .nav-item {
                             &.language {
@@ -196,22 +190,18 @@ header {
                                     height: 25px;
                                 }
                             }
-
                             &.moneda {
                                 .nav-link {
                                     font-size: 1rem;
                                     padding: 3px 8px;
                                 }
-
                                 .dropdown-menu {
                                     position: static;
                                     width: 100%;
                                     background-color: darken($color: $azul, $amount: 5%);
                                     min-width: 0;
-
                                     li {
                                         height: 35px;
-
                                         a {
                                             padding: 8px;
                                             font-size: 0.9rem;
@@ -227,13 +217,11 @@ header {
     }
 }
 
-/* Media Query para pantallas de máximo 576px */
 @media (max-width: 576px) {
     header {
         .content-header {
             margin: 5px;
         }
-
         .logo {
             a {
                 padding: 5px;
@@ -243,20 +231,17 @@ header {
                 }
             }
         }
-
         .menu {
             nav {
                 .navbar-collapse {
                     padding: 10px;
                 }
-
                 ul.navbar-nav {
                     li {
                         a {
                             font-size: 1rem;
                             padding: 8px 10px;
                         }
-
                         .dropdown-menu {
                             li {
                                 a {
@@ -267,10 +252,8 @@ header {
                         }
                     }
                 }
-
                 .lang-moneda {
                     gap: 8px;
-
                     .navbar-nav {
                         .nav-item {
                             &.language {
@@ -279,17 +262,14 @@ header {
                                     height: 20px;
                                 }
                             }
-
                             &.moneda {
                                 .nav-link {
                                     font-size: 0.9rem;
                                     padding: 2px 6px;
                                 }
-
                                 .dropdown-menu {
                                     li {
                                         height: 30px;
-
                                         a {
                                             font-size: 0.85rem;
                                             padding: 6px;

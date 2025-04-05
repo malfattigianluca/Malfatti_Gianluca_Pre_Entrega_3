@@ -5,46 +5,36 @@ footer {
     margin-top: 10px;
     color: $blanco;
     justify-content: space-between;
-
-        $divider-color: $gris;
-        $divider-width: 1px;
-        $divider-margin: 10px;
-        $divider-opacity: 0.5;
+    $divider-color: $gris;
+    $divider-width: 1px;
+    $divider-margin: 10px;
+    $divider-opacity: 0.5;
         .flex-container {
             display: flex;
-            align-items: center;
-        
-            .content {
-            }
-            
+            align-items: center;            
             .divider {
-            width: $divider-width;
-            align-self: stretch;
-            background-color: rgba($divider-color, $divider-opacity);
-            margin: 0 $divider-margin;
+                width: $divider-width;
+                align-self: stretch;
+                background-color: rgba($divider-color, $divider-opacity);
+                margin: 0 $divider-margin;
             }
         }
-
-
     .content-footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 20px 0;
-        
         .gotrip{
             padding-top: 20px;
             color: $blanco;
             text-decoration: none;
             font-size: 1rem;
             font-weight: 700;
-    
             h2{
                 font-size: 2rem;
                 font-weight: 700;
             }
         }
-
         .redes{
             img{
                 width: 30px;
@@ -52,7 +42,6 @@ footer {
                 justify-content: space-between;
             }
         }
-
         .info {
             margin: 10px;
             p{
@@ -60,8 +49,6 @@ footer {
                 font-size: 0.8rem;
             }
         }
-
-        
         .links{
             text-align: right;
             ul{
@@ -84,11 +71,4 @@ footer {
     ul{
         list-style: none;
     }
-
-
-    
-    
-
-    
-
 }

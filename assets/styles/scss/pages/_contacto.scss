@@ -6,13 +6,11 @@
         margin-bottom: 5rem;
         width: 70%;
     }
-
     .accordion {
         .accordion-item {
             border: 1px solid $gris;
             border-radius: 5px;
             margin-bottom: 10px;
-
             .accordion-header {
                 .accordion-button {
                     color: $azul;
@@ -21,11 +19,8 @@
                     border-radius: 5px;
                 }
             }
-
             .accordion-body {
                 padding: 20px;
-
-                
             }
         }
     }

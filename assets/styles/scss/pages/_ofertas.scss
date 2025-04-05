@@ -7,19 +7,16 @@ section{
         margin-bottom: 50px;
         border-radius: 15px;
         padding: 30px 20px;
-
         h2{
             text-align: center;
             padding-bottom: 40px;
         }
-
         .content {
             .promociones-content {
                 .promociones-item {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-
                     img {
                         width: 33%;
                         height: auto;
@@ -27,21 +24,17 @@ section{
                 }
             }
         }
-
         .tarjetas{     
             margin-top: 30px;
             padding: 30px 0 30px 0;
             text-align: center;
-
             #cuotas{
                 color: #12a357;                    
                 text-shadow: 1px;
             }           
-
             p{
                 font-size: 20px;
             }
-
             img{
                 width: 50px;
                 height: auto;
@@ -56,20 +49,17 @@ section{
             justify-content: flex-start;
             padding: 1rem;
             text-align: left;
-            
             .card-title {
                 font-size: 1.1rem;
                 font-weight: bold;
                 margin-bottom: 0.3rem;
             }
-
             .info,
             .noches-personas {
                 font-size: 0.9rem;
                 color: #555;
                 margin-bottom: 0.3rem;
             }
-
             .descuento {
                 font-size: 0.9rem;
                 font-weight: 500;
@@ -84,7 +74,6 @@ section{
                     color: green;
                 }
             }
-
             .precio {
                 font-size: 1.6rem;
                 font-weight: bold;
@@ -92,7 +81,6 @@ section{
                 margin-bottom: 0.4rem;
                 margin-top: 0; 
             }
-
             .imp {
                 margin-top: 1.25rem;
                 font-size: 0.75rem;
@@ -109,7 +97,7 @@ section{
                 .promociones-content {
                     .promociones-item {
                         .card {
-                            flex: 0 1 45%; /* 2 tarjetas por fila */
+                            flex: 0 1 45%;
                             max-width: 350px;
                         }
                     }
@@ -119,39 +107,33 @@ section{
     }
 }
 
-/* Media Query para pantallas de máximo 767px (1 tarjeta por fila) */
+
 @media (max-width: 767px) {
     section {
         .promociones {
             padding: 20px 10px;
-
             .content {
                 .promociones-content {
                     .promociones-item {
                         .card {
-                            flex: 0 1 100%; /* 1 tarjeta por fila */
+                            flex: 0 1 100%; 
                             max-width: 100%;
-                            min-width: 0; /* Eliminar el ancho mínimo para que se ajuste al contenedor */
-
+                            min-width: 0; 
                             .card-body {
                                 padding: 10px;
                                 min-height: 120px;
-
                                 .imp {
                                     font-size: 13px;
                                 }
-
                                 .info {
                                     font-size: 0.9em;
                                 }
-
                                 .descuento {
                                     span {
                                         font-size: 15px;
                                         margin-left: 8px;
                                     }
                                 }
-
                                 .precio {
                                     font-size: 22px;
                                     margin-top: 8px;
@@ -161,14 +143,11 @@ section{
                     }
                 }
             }
-
             .tarjetas {
                 padding: 20px 0;
-
                 p {
                     font-size: 18px;
                 }
-
                 img {
                     width: 40px;
                     margin: 0 3px;
@@ -178,17 +157,14 @@ section{
     }
 }
 
-/* Media Query para pantallas muy pequeñas (máximo 576px) */
 @media (max-width: 576px) {
     section {
         .promociones {
             padding: 15px 5px;
-
             h2 {
                 font-size: 1.5rem;
                 padding-bottom: 20px;
             }
-
             .content {
                 .promociones-content {
                     .promociones-item {
@@ -196,22 +172,18 @@ section{
                             .card-body {
                                 padding: 8px;
                                 min-height: 100px;
-
                                 .imp {
                                     font-size: 12px;
                                 }
-
                                 .info {
                                     font-size: 0.85em;
                                 }
-
                                 .descuento {
                                     span {
                                         font-size: 14px;
                                         margin-left: 5px;
                                     }
                                 }
-
                                 .precio {
                                     font-size: 20px;
                                     margin-top: 5px;
@@ -221,14 +193,11 @@ section{
                     }
                 }
             }
-
             .tarjetas {
                 padding: 15px 0;
-
                 p {
                     font-size: 16px;
                 }
-
                 img {
                     width: 35px;
                 }
